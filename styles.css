@@ -1,0 +1,53 @@
+.search {
+    position: relative;
+  }
+.search input {
+    width: 95%;
+    justify-content: center;
+  }
+.search svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+  }
+.avatar {
+    margin-top: -10px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+.name{
+    justify-content: right;
+  }
+body {
+    padding:  10px ;
+    background-color: rgb(203, 242, 255);
+}
+.skeleton {
+    background-color: white;
+    width: 95%;
+    border-radius: 40px;
+}
+.item {
+    margin-top: 30px;
+}
+.avt {
+    height: 40vh;
+    margin-bottom: 20px;
+}
+.aim, .budget {
+    background-color: white;
+    height: 15vh;
+}
+.payment, .receipt{
+    height: 77vh;
+}
+.chart, .overview{
+    height: 35vh;
+}
+
+
+  
