@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-form {
+    display: flex;
+    align-items: center;
+}
+
+.input-form label,
+.input-form input[type=text],
+.input-form input[type=number],
+.input-form button {
+    margin-bottom: .5rem;
+}
+
+#payment-table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+#payment-table th,
+#payment-table td {
+   padding:.5rem;   
+   border-bottom:solid lightgray thin; 
+}
