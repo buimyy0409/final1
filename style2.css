@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-form {
+    display: flex;
+    align-items: center;
+}
+
+.input-form label,
+.input-form input[type=text],
+.input-form input[type=number],
+.input-form button {
+    margin-bottom: .5rem;
+}
+
+#receipt-table {
+   width:100%;
+   max-width:500px; 
+   margin:auto;   
+}
+#receipt-table th,
+#receipt-table td{
+   padding:.5rem;  
+}

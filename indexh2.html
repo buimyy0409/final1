@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Receipt List</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+
+<h1>Receipt List</h1>
+
+<div class="input-form">
+  <label for="receipt-name">Receipt Name:</label>
+  <input type="text" id="receipt-name">
+
+  <label for="receipt-cost">Cost:</label>
+  <input type="number" id="receipt-cost">
+
+  <button onclick= "addReceipt()">Add Receipt</button>
+</div>
+
+<table id= "receipt-table"></table>
+
+<p>Total Receipt: $<span id= "total-receipt">0</span></p>
+
+
+<script src= "script2.js"></script>
+
+</body>
