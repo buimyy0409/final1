@@ -1,0 +1,172 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+header {
+  margin: 5px 10px;
+  padding: 20px;
+  height: 80px;
+  background-color: #eef1ff;
+}
+header,
+.skeleton {
+  border-radius: 40px;
+}
+header,
+.avt, .aim, .budget{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h4 {
+  align-self: center;
+}
+.search {
+  position: relative;
+}
+.search input {
+  width: 95%;
+  margin: 5px 10px;
+  background-color: white;
+  border: none;
+}
+.search input:focus {
+  outline: none;
+}
+.search svg {
+  position: absolute;
+  top: 35%;
+  right: 30px;
+  color: black;
+  float: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+.avatar {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.name {
+  justify-content: flex-end;
+  align-items: center;
+}
+body {
+  padding: 10px;
+  background-color: #c4dfdf;
+}
+.skeleton {
+  background: #eef1ff;
+  width: 95%;
+}
+.item {
+  margin-top: 30px;
+}
+.avt {
+  height: 40vh;
+  margin-bottom: 20px;
+}
+.avt,
+.aim {
+  border: 3px solid white;
+}
+.aim,
+.budget {
+  height: 15vh;
+  flex-direction: column;
+}
+.payment,
+.receipt {
+  height: 77vh;
+}
+.chart,
+.overview {
+  height: 35vh;
+}
+.avt {
+  flex-direction: column;
+  background: #e3f4f4;
+}
+.avt img {
+  margin-top: 20px;
+  width: 55%;
+  height: 55%;
+  border-radius: 50%;
+}
+.avt p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.avt h4 {
+  margin-top: -10px;
+}
+.aim input, .budget input {
+  border-radius: 10px;
+  width: 35%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #c4dfdf;
+  margin-top: 5px;
+}
+.aim label, .budget label{
+  font-size: 14px;
+  margin-top: 5%;
+}
+.aim p, .budget p{
+  font-size: 11px;
+  font-style: italic;
+}
+.payment h5 {
+  text-align: center;
+}
+.input-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.input-form label,
+.input-form input[type="text"],
+.input-form input[type="number"],
+.input-form button {
+  margin-bottom: 0.5rem;
+}
+#payment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#payment-table th,
+#payment-table td {
+  border-bottom: solid lightgray thin;
+}
+.receipt h5 {
+  text-align: center;
+}
+#receipt-table {
+  width: 100%;
+  margin: auto;
+}
+#receipt-table th,
+#receipt-table td {
+  padding: 0.5rem;
+}
+#chartContainer {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.income {
+  position: absolute;
+  clip: rect(0, 100px, 200px, 0);
+}
+.expense {
+  position: absolute;
+  clip: rect(0, 200px, 200px, 100px);
+}
