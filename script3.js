@@ -1,23 +1,14 @@
-function drawChart(incomePercentage, expensePercentage) {
-    var chartContainer = document.getElementById("chartContainer");
-  
-    var incomeAngle = (incomePercentage / 100) * 360;
-    var expenseAngle = (expensePercentage / 100) * 360;
-  
-    var incomeElement = document.createElement("div");
-    incomeElement.className = "circle income";
-    incomeElement.style.backgroundImage = `linear-gradient(90deg, #00cc00 ${incomeAngle}deg, transparent 0)`;
+let circularProgress = document.querySelector(".circular-progress"),
+    progressValue = document.querySelector(".progress-value");
+let progressStartValue = 0,    
+    progressEndValue = 90,    
+    speed = 100;
     
-    var expenseElement = document.createElement("div");
-    expenseElement.className = "circle expense";
-    expenseElement.style.backgroundImage = `linear-gradient(90deg, #ff0000 ${expenseAngle}deg, transparent 0)`;
-  
-    chartContainer.appendChild(incomeElement);
-    chartContainer.appendChild(expenseElement);
-  }
-  
-  // Sử dụng dữ liệu liên kết từ trước
-  var incomePercentage = 60; // Phần trăm thu nhập
-  var expensePercentage = 40; // Phần trăm chi tiêu
-  
-  drawChart(incomePercentage, expensePercentage);
+let progress = setInterval(() => {
+    progressStartValue++;
+    progressValue.textContent = `${progressStartValue}%`
+    circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+    if(progressStartValue == progressEndValue){
+        clearInterval(progress);
+    }    
+}, speed);
