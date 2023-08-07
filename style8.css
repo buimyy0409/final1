@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #input-container {
+    margin-bottom: 20px;
+  }
+  
+  #goals-list {
+     margin-top: 20px;
+  }
