@@ -1,3 +1,26 @@
+const aims = [];
+function handleAddAim (){
+  const aimInput = document.getElementById('aim').value;
+  // const newAim = document.getElementById('aim').value;
+  
+  console.log(aimInput)
+  aims.push(aimInput)
+  document.getElementById('aim').value ="";
+  updateAimsList();
+  // handlePrintAim(aim, aims.length - 1)
+  // document.getElementById('aim').value = '';
+}
+function updateAimsList () {
+  let aimHtml = "<ul>";
+  for (let i=0; i<1;i++) {
+    aimHtml += "<li>" + "Aiming Money: $" + parseInt(aims[i]) + "</li>";
+  }
+  if (aims.length === 0){
+    aimHtml += "<li>No Aims added yet.</li>";
+  }
+  aimHtml += "</ul>";
+  document.getElementById("aims-list").innerHTML = aimHtml;
+}
 
 const receiptList = [];
 const addReceipt = () => {

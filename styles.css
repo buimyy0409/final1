@@ -1,6 +1,5 @@
 * {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   header {
     margin: 5px 10px;
@@ -11,7 +10,7 @@
   header, .skeleton {
     border-radius: 40px;
   }
-  header,.avt, .box{
+  header,.avt, .box, .aim-result{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,12 +100,19 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    margin: 5px 10px;
+    margin: 0px;
     border-bottom: 2px solid #c4dfdf;
+  }
+  .aim-result{
+    margin-bottom: 0px;
+  }
+  .aims-list{
+    margin-top: 5px;
   }
   .aim label, .budget label{
     font-size: 14px;
     margin-top: 5%;
+    margin-bottom: 0;
   }
   .aim-inp, .budget-inp{
     display: flex;
@@ -121,6 +127,7 @@
     font-size: 11px;
     font-style: italic;
     text-align: center;
+    margin: 0;
   }
   .input-form {
     display: flex;
@@ -156,7 +163,7 @@
     width: 65%;
     padding: 6px 12px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     background: cadetblue;
     color: white;
     letter-spacing: 1px;
